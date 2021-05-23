@@ -88,8 +88,21 @@ for persona in Personal:
         Tabla_Personal.append([persona[0], persona[1], persona[2], persona[3], persona[4], 'administrativo'])
         Tabla_Administrativos.append([persona[0], persona[6], persona[5]])
     else:
-        Tabla_Personal.append([persona[0], persona[1], persona[2], persona[3], persona[4], 'repartidor'])
-        Tabla_Licencias.add((persona[0], persona[7]))
+        a = 0
+        for repartidor in Tabla_Licencias:
+            if repartidor[0] == persona[0]:
+                a = 1
+        if a == 0:
+            Tabla_Personal.append([persona[0], persona[1], persona[2], persona[3], persona[4], 'repartidor'])
+        
+        b = 0
+        for licencia in Tabla_Licencias:
+            if licencia[1] == persona[7]:
+                b = 1
+        
+        if b == 0:
+            Tabla_Licencias.add((persona[0], persona[7]))
+    
         Tabla_RelacionVR.append([persona[0], persona[8]])
 
 # Tabla Unidades y Cobertura
@@ -127,9 +140,6 @@ for direccion in Direcciones:
     for comuna in Tabla_Comunas:
         if direccion[2] == comuna[1]:
             Tabla_Direcciones.append([direccion[0], direccion[1], comuna[0]])
-            print([direccion[0], direccion[1], comuna[0]])
-            print(comuna)
-            print(direccion)
             a = 1
     if a == 0:
         print('error')

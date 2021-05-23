@@ -12,4 +12,7 @@
     <form action="consultas/consulta_unidades.php" method="post">
         <input type="submit" value="Buscar">
     </form>
+
+</body>
+</html>
         
