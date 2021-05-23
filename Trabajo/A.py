@@ -82,6 +82,8 @@ Tabla_Personal = []
 Tabla_Administrativos = []
 Tabla_Licencias = set()
 Tabla_RelacionVR = []
+z = 1
+v = 1
 
 for persona in Personal:
     if persona[5]!='':
@@ -102,9 +104,11 @@ for persona in Personal:
                 b = 1
         
         if b == 0:
-            Tabla_Licencias.add((persona[0], persona[7]))
-    
-        Tabla_RelacionVR.append([persona[0], persona[8]])
+            Tabla_Licencias.add((str(z), persona[0], persona[7]))
+            z+=1
+
+        Tabla_RelacionVR.append([str(v), persona[8], persona[0]])
+        v+=1
 
 # Tabla Unidades y Cobertura
 Tabla_Unidades = set()
@@ -144,6 +148,12 @@ for direccion in Direcciones:
             a = 1
     if a == 0:
         print('error')
+
+# Tabla Despachos
+Tabla_Despachos = []
+
+for despacho in despachos:
+    Tabla_Despachos.append(despacho)
 
 
 #########################
@@ -218,5 +228,11 @@ with open('Reales/Direcciones.csv', mode='w', newline='') as documento:
     escritor = csv.writer(documento, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
     for fila in Tabla_Direcciones:
+        escritor.writerow(fila)
+        
+with open('Reales/Despachos.csv', mode='w', newline='') as documento:
+    escritor = csv.writer(documento, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+    for fila in Tabla_Despachos:
         escritor.writerow(fila)
         
