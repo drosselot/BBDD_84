@@ -134,11 +134,12 @@ for vehiculo in Vehiculos:
         Tabla_Carga.append([vehiculo[0], vehiculo[4], vehiculo[5]])
     elif vehiculo[6]!='':
         Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'frescos'])
-        Tabla_Frescos.append(vehiculo[6])
+        Tabla_Frescos.append([vehiculo[0], vehiculo[6]])
     else:
         Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'cadena fria'])
-        Tabla_Frescos.append([vehiculo[7], vehiculo[8]])
+        Tabla_Frios.append([vehiculo[0], vehiculo[7], vehiculo[8]])
 
+print(Tabla_Frescos)
 #Tabla Direcciones
 Tabla_Direcciones = []
 
