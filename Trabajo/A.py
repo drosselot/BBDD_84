@@ -127,6 +127,7 @@ Tabla_Vehiculos = []
 Tabla_Frescos = []
 Tabla_Frios = []
 Tabla_Carga = []
+Tabla_Vehiculos_Ninguno = []
 
 for vehiculo in Vehiculos:
     if vehiculo[4]!='':
@@ -135,9 +136,11 @@ for vehiculo in Vehiculos:
     elif vehiculo[6]!='':
         Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'frescos'])
         Tabla_Frescos.append([vehiculo[0], vehiculo[6]])
-    else:
+    elif vehiculo[7]!='':
         Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'cadena fria'])
         Tabla_Frios.append([vehiculo[0], vehiculo[7], vehiculo[8]])
+    else:
+        Tabla_Vehiculos_Ninguno.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'ninguno'])
 
 print(Tabla_Frescos)
 #Tabla Direcciones
@@ -237,5 +240,11 @@ with open('Reales/Despachos.csv', mode='w', newline='') as documento:
     escritor = csv.writer(documento, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
     for fila in Tabla_Despachos:
+        escritor.writerow(fila)
+        
+with open('Reales/Vehiculos_Ninguno.csv', mode='w', newline='') as documento:
+    escritor = csv.writer(documento, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+    for fila in Tabla_Vehiculos_Ninguno:
         escritor.writerow(fila)
         

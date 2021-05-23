@@ -15,16 +15,12 @@
 14,EG8528,47,activo,camioneta,carga
 15,QD4440,31,activo,moto,cadena fria
 16,VX5561,40,activo,bicicleta,frescos
-17,VT6220,2,activo, camion,cadena fria
 18,XK7318,35,activo,auto,frescos
 19,WW2485,21,activo,camioneta,cadena fria
-20,HV2199,6,activo, camion,cadena fria
 21,ID7819,19,activo,bicicleta,frescos
 22,QA2495,15,activo,bicicleta,cadena fria
-23,WF7217,39,activo, camion,cadena fria
 24,BN4195,10,activo,moto,cadena fria
 25,UW2735,1,mantencion,camioneta,frescos
-26,EF7582,11,activo, camion,cadena fria
 27,OT5458,42,mantencion,moto,frescos
 28,YN4644,17,activo,camioneta,carga
 29,FS3778,37,activo,bicicleta,frescos
@@ -47,12 +43,10 @@
 46,HE7029,36,activo,camioneta,cadena fria
 47,HB3228,4,activo,bicicleta,frescos
 48,OF5956,33,activo,moto,cadena fria
-49,SG9128,25,mantencion, camion,cadena fria
 50,GO7311,54,activo,bicicleta,frescos
 51,PM7495,32,activo,auto,frescos
 52,GS7205,28,activo,auto,frescos
 53,PU5101,24,mantencion,bicicleta,cadena fria
-54,VP2429,5,activo, camion,cadena fria
 55,MO4968,43,activo,auto,frescos
 56,BI5654,51,activo,camioneta,carga
 57,YB8271,25,activo,auto,cadena fria
@@ -63,12 +57,9 @@
 62,AU6167,17,activo,bicicleta,cadena fria
 63,JD8184,5,activo,moto,frescos
 64,RK2324,31,activo,camioneta,frescos
-65,LN6036,54,activo, camion,cadena fria
 66,PZ3477,12,mantencion,camioneta,frescos
 67,GM1638,7,activo,bicicleta,frescos
-68,CI3218,18,activo, camion,cadena fria
 69,UH6836,20,activo,moto,frescos
-70,QJ6353,32,activo, camion,cadena fria
 71,LW4637,5,activo,camioneta,frescos
 72,SL2391,41,mantencion,moto,frescos
 73,PP3724,4,activo,camioneta,frescos
@@ -81,10 +72,8 @@
 80,KY2131,19,activo,moto,cadena fria
 81,MW6341,28,activo,auto,frescos
 82,FU8868,23,activo,bicicleta,frescos
-83,UH1378,7,activo, camion,cadena fria
 84,GT9752,39,activo,auto,frescos
 85,OB9598,14,mantencion,camioneta,frescos
-86,VR7517,21,mantencion, camion,cadena fria
 87,GF5994,9,activo,auto,frescos
 88,HF1544,45,activo,auto,frescos
 89,AI2283,45,mantencion,moto,cadena fria
@@ -105,7 +94,6 @@
 104,UL8619,51,activo,bicicleta,frescos
 105,LF8633,49,activo,camioneta,frescos
 106,PR9667,53,activo,camioneta,carga
-107,MZ2239,35,activo, camion,cadena fria
 108,WI9449,14,activo,bicicleta,cadena fria
 109,XG4556,2,activo,camioneta,cadena fria
 110,HW2014,1,activo,auto,cadena fria
@@ -113,5 +101,4 @@
 112,BB5259,3,mantencion,bicicleta,frescos
 113,WC8293,39,activo,camioneta,frescos
 114,RY9242,36,mantencion,auto,frescos
-115,OM4230,32,activo, camion,cadena fria
 116,AL1557,40,mantencion,auto,frescos
