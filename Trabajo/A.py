@@ -119,6 +119,20 @@ for vehiculo in Vehiculos:
         Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'cadena fria'])
         Tabla_Frescos.append([vehiculo[7], vehiculo[8]])
 
+#Tabla Direcciones
+Tabla_Direcciones = []
+
+for direccion in Direcciones:
+    a = 0
+    for comuna in Tabla_Comunas:
+        if direccion[2] == comuna[1]:
+            Tabla_Direcciones.append([direccion[0], direccion[1], comuna[0]])
+            print([direccion[0], direccion[1], comuna[0]])
+            print(comuna)
+            print(direccion)
+            a = 1
+    if a == 0:
+        print('error')
 
 
 #########################
@@ -188,3 +202,10 @@ with open('Reales/Comunas.csv', mode='w', newline='') as documento:
 
     for fila in Tabla_Comunas:
         escritor.writerow(fila)
+        
+with open('Reales/Direcciones.csv', mode='w', newline='') as documento:
+    escritor = csv.writer(documento, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+
+    for fila in Tabla_Direcciones:
+        escritor.writerow(fila)
+        
