@@ -154,7 +154,7 @@ for direccion in Direcciones:
 # Tabla Despachos
 Tabla_Despachos = []
 
-for despacho in despachos:
+for despacho in Despachos:
     Tabla_Despachos.append(despacho)
 
 
