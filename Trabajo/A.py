@@ -89,9 +89,10 @@ for persona in Personal:
         Tabla_Administrativos.append([persona[0], persona[6], persona[5]])
     else:
         a = 0
-        for repartidor in Tabla_Licencias:
+        for repartidor in Tabla_Personal:
             if repartidor[0] == persona[0]:
                 a = 1
+
         if a == 0:
             Tabla_Personal.append([persona[0], persona[1], persona[2], persona[3], persona[4], 'repartidor'])
         
