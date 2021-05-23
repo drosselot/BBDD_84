@@ -117,7 +117,9 @@ Tabla_Cobertura = []
 x = 1
 for unidad in Unidades:
     Tabla_Unidades.add((unidad[0], unidad[1], unidad[2]))
-    Tabla_Cobertura.append([str(a), unidad[0], unidad[3]])
+    for comuna in Tabla_Comunas:
+        if comuna[1] == unidad[3]:
+            Tabla_Cobertura.append([str(x), unidad[0], comuna[0]])
     x+=1
 
 #Tabla Vehiculos, Frescos, Frios, Carga
