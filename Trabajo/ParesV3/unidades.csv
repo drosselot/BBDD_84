@@ -1,0 +1,283 @@
+id,dirección,jefe,comuna_cobertura
+19,554,817,buin
+41,146,182,arica
+5,310,175,buin
+55,561,305,arica
+12,1015,155,santiago
+15,1009,139,arica
+40,778,166,san joaquin
+23,388,769,coquimbo
+25,747,47,la serena
+34,198,69,buin
+45,443,434,la serena
+17,220,171,punta arenas
+4,850,10,santiago
+14,116,569,la serena
+35,541,471,valparaiso
+26,497,774,providencia
+8,268,607,santiago
+50,985,76,arica
+51,130,748,providencia
+9,501,31,san joaquin
+7,555,796,coquimbo
+41,146,182,valparaiso
+47,195,532,arica
+30,200,252,punta arenas
+47,195,532,providencia
+29,1051,765,san joaquin
+11,440,781,coquimbo
+30,200,252,buin
+16,398,764,providencia
+3,1079,22,arica
+3,1079,22,san joaquin
+21,1060,81,santiago
+21,1060,81,buin
+41,146,182,la ligua
+19,554,817,la ligua
+19,554,817,la serena
+7,555,796,santiago
+46,1097,457,providencia
+53,233,583,coquimbo
+30,200,252,la serena
+36,622,784,valparaiso
+6,199,295,arica
+22,566,544,la ligua
+32,493,714,providencia
+38,261,46,arica
+4,850,10,la ligua
+39,547,88,coquimbo
+13,115,786,providencia
+20,991,190,providencia
+35,541,471,arica
+7,555,796,buin
+31,857,547,la ligua
+35,541,471,providencia
+44,417,35,valparaiso
+8,268,607,arica
+22,566,544,punta arenas
+6,199,295,coquimbo
+45,443,434,coquimbo
+2,439,572,arica
+28,49,688,arica
+54,238,545,arica
+53,233,583,buin
+44,417,35,buin
+51,130,748,valparaiso
+22,566,544,buin
+23,388,769,santiago
+1,239,418,valparaiso
+7,555,796,arica
+20,991,190,la serena
+6,199,295,la serena
+29,1051,765,punta arenas
+22,566,544,santiago
+28,49,688,la ligua
+5,310,175,la ligua
+0,46,244,la serena
+14,116,569,valparaiso
+18,1052,77,arica
+54,238,545,la ligua
+2,439,572,la ligua
+43,1073,662,arica
+15,1009,139,valparaiso
+12,1015,155,valparaiso
+24,1016,92,buin
+54,238,545,santiago
+35,541,471,la serena
+55,561,305,valparaiso
+56,333,637,la serena
+3,1079,22,providencia
+39,547,88,valparaiso
+52,69,656,punta arenas
+56,333,637,providencia
+34,198,69,coquimbo
+30,200,252,coquimbo
+2,439,572,valparaiso
+34,198,69,arica
+16,398,764,arica
+16,398,764,san joaquin
+52,69,656,santiago
+23,388,769,la ligua
+15,1009,139,la serena
+22,566,544,arica
+44,417,35,coquimbo
+20,991,190,santiago
+56,333,637,arica
+21,1060,81,la serena
+11,440,781,punta arenas
+42,513,301,arica
+19,554,817,arica
+37,776,162,la serena
+37,776,162,arica
+20,991,190,arica
+48,20,64,la ligua
+3,1079,22,punta arenas
+13,115,786,la ligua
+27,160,113,arica
+49,530,439,arica
+39,547,88,providencia
+7,555,796,valparaiso
+21,1060,81,arica
+20,991,190,coquimbo
+17,220,171,buin
+36,622,784,santiago
+40,778,166,coquimbo
+10,210,386,san joaquin
+29,1051,765,arica
+39,547,88,punta arenas
+46,1097,457,santiago
+48,20,64,coquimbo
+32,493,714,santiago
+35,541,471,coquimbo
+14,116,569,la ligua
+8,268,607,buin
+10,210,386,arica
+18,1052,77,providencia
+12,1015,155,la ligua
+7,555,796,punta arenas
+5,310,175,santiago
+52,69,656,la serena
+10,210,386,valparaiso
+46,1097,457,arica
+21,1060,81,la ligua
+3,1079,22,coquimbo
+22,566,544,la serena
+4,850,10,arica
+55,561,305,providencia
+9,501,31,la serena
+37,776,162,santiago
+20,991,190,san joaquin
+2,439,572,providencia
+45,443,434,arica
+41,146,182,providencia
+46,1097,457,valparaiso
+53,233,583,arica
+19,554,817,coquimbo
+13,115,786,arica
+16,398,764,buin
+9,501,31,la ligua
+31,857,547,valparaiso
+54,238,545,valparaiso
+26,497,774,arica
+53,233,583,punta arenas
+44,417,35,arica
+44,417,35,punta arenas
+42,513,301,santiago
+14,116,569,arica
+5,310,175,san joaquin
+15,1009,139,buin
+32,493,714,valparaiso
+38,261,46,providencia
+25,747,47,providencia
+10,210,386,buin
+39,547,88,buin
+23,388,769,punta arenas
+4,850,10,valparaiso
+36,622,784,la ligua
+32,493,714,punta arenas
+43,1073,662,valparaiso
+6,199,295,san joaquin
+8,268,607,san joaquin
+23,388,769,la serena
+40,778,166,arica
+21,1060,81,punta arenas
+46,1097,457,coquimbo
+3,1079,22,la ligua
+15,1009,139,providencia
+8,268,607,providencia
+26,497,774,santiago
+49,530,439,valparaiso
+32,493,714,arica
+53,233,583,valparaiso
+53,233,583,san joaquin
+40,778,166,santiago
+56,333,637,coquimbo
+17,220,171,la serena
+20,991,190,la ligua
+36,622,784,la serena
+51,130,748,punta arenas
+7,555,796,la ligua
+18,1052,77,santiago
+39,547,88,la serena
+38,261,46,la serena
+3,1079,22,la serena
+21,1060,81,coquimbo
+22,566,544,coquimbo
+38,261,46,santiago
+48,20,64,buin
+14,116,569,san joaquin
+1,239,418,arica
+30,200,252,arica
+33,1007,320,valparaiso
+17,220,171,arica
+9,501,31,arica
+39,547,88,arica
+40,778,166,la serena
+29,1051,765,santiago
+31,857,547,santiago
+17,220,171,santiago
+23,388,769,arica
+40,778,166,buin
+34,198,69,valparaiso
+17,220,171,valparaiso
+32,493,714,la serena
+49,530,439,santiago
+33,1007,320,buin
+15,1009,139,santiago
+12,1015,155,arica
+4,850,10,san joaquin
+23,388,769,valparaiso
+25,747,47,arica
+3,1079,22,santiago
+6,199,295,valparaiso
+48,20,64,arica
+10,210,386,providencia
+50,985,76,valparaiso
+7,555,796,san joaquin
+24,1016,92,arica
+28,49,688,valparaiso
+14,116,569,coquimbo
+24,1016,92,la serena
+49,530,439,coquimbo
+39,547,88,santiago
+10,210,386,punta arenas
+28,49,688,coquimbo
+6,199,295,santiago
+32,493,714,buin
+40,778,166,providencia
+40,778,166,punta arenas
+36,622,784,arica
+5,310,175,punta arenas
+16,398,764,la serena
+54,238,545,providencia
+48,20,64,san joaquin
+11,440,781,arica
+47,195,532,buin
+19,554,817,providencia
+5,310,175,arica
+22,566,544,providencia
+51,130,748,arica
+34,198,69,providencia
+33,1007,320,arica
+31,857,547,arica
+52,69,656,arica
+36,622,784,buin
+20,991,190,punta arenas
+16,398,764,la ligua
+5,310,175,valparaiso
+2,439,572,la serena
+0,46,244,valparaiso
+44,417,35,la ligua
+50,985,76,providencia
+51,130,748,coquimbo
+0,46,244,arica
+54,238,545,coquimbo
+56,333,637,buin
+28,49,688,buin
+10,210,386,la serena
+23,388,769,providencia
+18,1052,77,valparaiso
+42,513,301,buin
+30,200,252,santiago
+4,850,10,coquimbo
+47,195,532,la serena
