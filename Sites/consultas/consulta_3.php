@@ -5,9 +5,9 @@
     require("../config/conexion.php");
 
     $comuna = $_POST["comuna"];
-    $ano = $_POST["ano"];
+    $ano = $_POST["ano"]; 
 
-    $query = "SELECT Vehiculos.id, Vehiculos.patente FROM Vehiculos, Despachos, Direcciones, Comunas WHERE Vehiculos.id = Despachos.id_vehiculo AND Despachos.id_destino = Direcciones.id AND Direcciones.id_comuna = Comunas.id AND Comunas.comuna LIKE '%$comuna%';";
+    $query = "SELECT Vehiculos.id, Vehiculos.patente FROM Vehiculos, Despachos, Direcciones, Comunas WHERE DATE_PART('year', Despachos.fecha) = $ano AND Vehiculos.id = Despachos.id_vehiculo AND Despachos.id_destino = Direcciones.id AND Direcciones.id_comuna = Comunas.id AND Comunas.comuna LIKE '%$comuna%';";
 
     $resultado = $bbdd -> prepare($query);
     $resultado -> execute();
