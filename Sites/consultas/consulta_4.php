@@ -8,7 +8,7 @@
     $edad1 = $_POST["edad1"];
     $edad2 = $_POST["edad2"];
 
-    $query = "SELECT Despachos.id, Despachos.fecha, Despachos.id_origen, Despachos.id_destino, Despachos.id_compra FROM Despachos, Vehiculos, RelacionVR, Personal WHERE Vehiculos.tipo = $tipo AND Personal.edad BETWEEN $edad1 AND $edad2 AND Vehiculos.id = Despachos.id_vehiculo AND Vehiculos.id = RelacionVR.id_vehiculo AND RelacionVR.id_repartidor = Personal.id ;";
+    $query = "SELECT Despachos.id, Despachos.fecha, Despachos.id_origen, Despachos.id_destino, Despachos.id_compra FROM Despachos, Vehiculos, RelacionVR, Personal WHERE Vehiculos.tipo = '$tipo' AND Personal.edad BETWEEN $edad1 AND $edad2 AND Vehiculos.id = Despachos.id_vehiculo AND Vehiculos.id = RelacionVR.id_vehiculo AND RelacionVR.id_repartidor = Personal.id ;";
 
     $resultado = $bbdd -> prepare($query);
     $resultado -> execute();
