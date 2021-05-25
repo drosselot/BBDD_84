@@ -35,15 +35,26 @@
     <h3> Vehiculos que realizaron despachos en la comuna y año seleccionados: </h3>
     <br>
     
-    
+    <?php
+    #Primero obtenemos todas las fechas
+    require("config/conexion.php");
+    $result3 = $bbdd -> prepare("SELECT fecha FROM Despachos ORDER BY fecha;");
+    $result3 -> execute();
+    $dataCollected3 = $result3 -> fetchAll();
+
+    ?>
+
     <form action="consultas/consulta_3.php" method="post">
         Comuna:
         <input type="text" name="comuna">
         <br>
         Año:
         <select name="ano">
-            <option value ="2021">2021</option>
-            <option value ="2022">2022</option>
+            <?php
+                foreach($dataCollected3 as $fechas) {
+                echo "<option value=$fechas>$fechas</option>";
+                } 
+            ?>
         </select>
         <br>
         <input type="submit" value="Buscar">
