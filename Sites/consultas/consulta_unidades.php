@@ -4,7 +4,7 @@
 <?php
     require("../config/conexion.php");
 
-    $query = "SELECT Unidades.id, Direcciones.nombre, Comunas.comuna FROM Unidades, Direcciones, Comunas WHERE Unidades.id_direccion = Direcciones.id AND Direcciones.id_comuna = Comunas.id;";
+    $query = "SELECT Unidades.id, Direcciones.nombre, Comunas.comuna FROM Unidades, Direcciones, Comunas WHERE Unidades.id_direccion = Direcciones.id AND Direcciones.id_comuna = Comunas.id ORDER BY Unidades.id;";
 
     $resultado = $bbdd -> prepare($query);
     $resultado -> execute();
