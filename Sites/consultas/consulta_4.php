@@ -22,11 +22,14 @@
         <th>ID Origen</th>
         <th>ID Destino</th>
         <th>ID Compra</th>
+        <th>ID Vehiculo</th>
+        <th>ID Repartidor</th>
+        <th>Edad Repartidor</th>
     </tr>
 
     <?php
         foreach ($consulta as $c) {
-            echo "<tr><td>$c[0]</td><td>$c[1]</td><td>$c[2]</td><td>$c[3]</td><td>$c[4]</td></tr>";
+            echo "<tr><td>$c[0]</td><td>$c[1]</td><td>$c[2]</td><td>$c[3]</td><td>$c[4]</td><td>$c[5]</td><td>$c[6]</td><td>$c[7]</td></tr>";
         }
     ?>
 
