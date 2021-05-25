@@ -52,8 +52,8 @@
         <select name="ano">
             <?php
                 foreach($dataCollected3 as $fechas) {
-                echo "<option value=$fechas[0]>$fechas[0]</option>";
-                } 
+                echo "<option value=date($fechas[0] $Y)>date($fechas[0] $Y)</option>";
+                }
             ?>
         </select>
         <br>
