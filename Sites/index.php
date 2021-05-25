@@ -38,7 +38,7 @@
     <?php
     #Primero obtenemos todas las fechas
     require("config/conexion.php");
-    $result3 = $bbdd -> prepare("SELECT fecha FROM Despachos ORDER BY fecha;");
+    $result3 = $bbdd -> prepare("SELECT datepart(yyyy, fecha) as año FROM Despachos GROUP BY datepart(yyyy, fecha);");
     $result3 -> execute();
     $dataCollected3 = $result3 -> fetchAll();
 
@@ -52,7 +52,7 @@
         <select name="ano">
             <?php
                 foreach($dataCollected3 as $fechas) {
-                echo "<option value=date$fechas[0][0:4]>date$fechas[0][0:4]</option>";
+                echo "<option value=date$fechas[0]>date$fechas[0]</option>";
                 }
             ?>
         </select>
