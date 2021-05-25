@@ -38,7 +38,7 @@
     <?php
     #Primero obtenemos todas las fechas
     require("config/conexion.php");
-    $result3 = $bbdd -> prepare("SELECT datepart(yyyy, fecha) as año FROM Despachos GROUP BY datepart(yyyy, fecha);");
+    $result3 = $bbdd -> prepare("SELECT DATE_PART('year', fecha) as año FROM Despachos GROUP BY DATE_PART('year', fecha);");
     $result3 -> execute();
     $dataCollected3 = $result3 -> fetchAll();
 
