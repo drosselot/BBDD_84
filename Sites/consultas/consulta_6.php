@@ -6,7 +6,7 @@
 
     $tipo = $_POST["tipo_vehiculo"];
 
-    $query = "SELECT Vehiculos.id, Vehiculos.patente FROM Vehiculos, Unidades, Direcciones, Comunas WHERE Vehiculos.id_unidad = Unidades.id AND Unidades.id_direccion = Direcciones.id AND Direcciones.id_comuna = Comunas.id AND Comuna.comuna LIKE '%$comuna%';";
+    $query = "SELECT Unidad.id, Count(Vehiculos.id) as N_Vehiculos FROM Vehiculos, Unidades, Direcciones, Comunas WHERE Vehiculos.id_unidad = Unidades.id AND Unidades.id_direccion = Direcciones.id AND Direcciones.id_comuna = Comunas.id AND Vehiculos.tipo LIKE '%$tipo%' GROUP BY Unidades.id;";
 
     $resultado = $bbdd -> prepare($query);
     $resultado -> execute();
@@ -16,13 +16,11 @@
 <table>
     <tr>
         <th>ID</th>
-        <th>Unidad</th>
+        <th>Numero Vehiculos</th>
     </tr>
 
     <?php
-        foreach ($consulta2 as $c2) {
-            echo "<tr><td>$c2[0]</td><td>$c2[1]</td></tr>";
-        }
+        echo "<tr><td>$consulta2[0]</td><td>$consulta2[1]</td></tr>";
     ?>
 
 </table>
