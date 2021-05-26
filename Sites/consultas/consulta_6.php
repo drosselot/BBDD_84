@@ -20,7 +20,9 @@
     </tr>
 
     <?php
-        echo "<tr><td>$consulta2[0]</td><td>$consulta2[1]</td></tr>";
+        foreach ($consulta2 as $c2) {
+            echo "<tr><td>$c2[0]</td><td>$c2[1]</td></tr>";
+        }
     ?>
 
 </table>
