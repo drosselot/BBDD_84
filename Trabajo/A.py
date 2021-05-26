@@ -145,7 +145,7 @@ for vehiculo in Vehiculos:
         Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'cadena fria'])
         Tabla_Frios.append([vehiculo[0], vehiculo[7], vehiculo[8]])
     else:
-        Tabla_Vehiculos_Ninguno.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'ninguno'])
+        Tabla_Vehiculos.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'ninguno'])
 
 #Tabla Direcciones
 Tabla_Direcciones = []
