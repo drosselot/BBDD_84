@@ -120,7 +120,10 @@ for unidad in Unidades:
     for comuna in Tabla_Comunas:
         if comuna[1] == unidad[3]:
             Tabla_Cobertura.append([str(x), unidad[0], comuna[0]])
+            print(comuna[1], unidad[3])
+            print(unidad[0], comuna[0])
     x+=1
+print(Tabla_Cobertura)
 
 #Tabla Vehiculos, Frescos, Frios, Carga
 Tabla_Vehiculos = []
