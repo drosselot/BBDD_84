@@ -9,7 +9,7 @@
 
     <!-Consulta 1 ###########################->
 
-    <h3> Obtener todas las unidades de la empresa de despacho: </h3>
+    <h3> Obtener las direcciones de todas las unidades de la empresa de despacho: </h3>
     <br>
     <form action="consultas/consulta_unidades.php" method="post">
         <input type="submit" value="Buscar">

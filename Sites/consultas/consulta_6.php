@@ -6,7 +6,7 @@
 
     $tipo = $_POST["tipo_vehiculo"];
 
-    $query = "SELECT Unidad.id, Count(Vehiculos.id) as N_Vehiculos FROM Vehiculos, Unidades, Direcciones, Comunas WHERE Vehiculos.id_unidad = Unidades.id AND Unidades.id_direccion = Direcciones.id AND Direcciones.id_comuna = Comunas.id AND Vehiculos.tipo LIKE '%$tipo%' GROUP BY Unidades.id;";
+    $query = "SELECT Unidades.id, Count(Vehiculos.id) as N_Vehiculos FROM Vehiculos, Unidades WHERE Vehiculos.id_unidad = Unidades.id AND Vehiculos.tipo LIKE '%$tipo%' GROUP BY Unidades.id;";
 
     $resultado = $bbdd -> prepare($query);
     $resultado -> execute();
