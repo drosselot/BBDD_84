@@ -71,11 +71,14 @@ for row in Unidades:
 for row in Direcciones:
     Tabla_Comunas.add(row[2])
 
+print(Tabla_Comunas)
 Tabla_Comunas = list(Tabla_Comunas)
+print(Tabla_Comunas)
 a = 0
 for comuna in Tabla_Comunas:
     Tabla_Comunas[a] = [str(a+1), comuna]
     a += 1
+print(Tabla_Comunas)
 
 # Tabla Personal, Administrativos y Licencias
 Tabla_Personal = []
@@ -114,16 +117,15 @@ for persona in Personal:
 Tabla_Unidades = set()
 Tabla_Cobertura = []
 
+print(Tabla_Comunas)
 x = 1
 for unidad in Unidades:
     Tabla_Unidades.add((unidad[0], unidad[1], unidad[2]))
     for comuna in Tabla_Comunas:
         if comuna[1] == unidad[3]:
             Tabla_Cobertura.append([str(x), unidad[0], comuna[0]])
-            print(comuna[1], unidad[3])
-            print(unidad[0], comuna[0])
     x+=1
-print(Tabla_Cobertura)
+print(Tabla_Comunas)
 
 #Tabla Vehiculos, Frescos, Frios, Carga
 Tabla_Vehiculos = []
@@ -145,7 +147,6 @@ for vehiculo in Vehiculos:
     else:
         Tabla_Vehiculos_Ninguno.append([vehiculo[0], vehiculo[1], vehiculo[9], vehiculo[2], vehiculo[3], 'ninguno'])
 
-print(Tabla_Frescos)
 #Tabla Direcciones
 Tabla_Direcciones = []
 
@@ -158,6 +159,7 @@ for direccion in Direcciones:
     if a == 0:
         print('error')
 
+print(Tabla_Comunas)
 # Tabla Despachos
 Tabla_Despachos = []
 
@@ -232,6 +234,9 @@ with open('Reales/Comunas.csv', mode='w', newline='') as documento:
 
     for fila in Tabla_Comunas:
         escritor.writerow(fila)
+        print(fila)
+
+print(Tabla_Comunas)
         
 with open('Reales/Direcciones.csv', mode='w', newline='') as documento:
     escritor = csv.writer(documento, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
