@@ -5,6 +5,7 @@
     require("../config/conexion.php");
 
     $tipo = $_POST["tipo_vehiculo"];
+    $tipo = strtolower("$tipo");
 
     $query = "SELECT Cantidades.id, Cantidades.cantidad, Maximo.mayor FROM (SELECT Unidades.id, COUNT(Vehiculos.id) as cantidad FROM Unidades, Vehiculos WHERE Vehiculos.id_unidad = Unidades.id AND Vehiculos.tipo LIKE '%$tipo%' GROUP BY Unidades.id) as Cantidades, (SELECT MAX(cantidad2) as mayor FROM (SELECT Unidades.id, COUNT(Vehiculos.id) as cantidad2 FROM Unidades, Vehiculos WHERE Vehiculos.id_unidad = Unidades.id AND Vehiculos.tipo LIKE '%$tipo%' GROUP BY Unidades.id ORDER BY Unidades.id) as Tabla1) as Maximo WHERE Cantidades.cantidad = Maximo.mayor;";
 

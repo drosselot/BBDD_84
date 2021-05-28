@@ -5,6 +5,7 @@
     require("../config/conexion.php");
 
     $comuna = $_POST["comuna"];
+    $comuna = strtolower("$comuna");
     $ano = $_POST["ano"]; 
 
     $query = "SELECT Vehiculos.id, Vehiculos.patente, Vehiculos.estado, Vehiculos.tipo FROM Vehiculos, Despachos, Direcciones, Comunas WHERE DATE_PART('year', Despachos.fecha) = $ano AND Vehiculos.id = Despachos.id_vehiculo AND Despachos.id_destino = Direcciones.id AND Direcciones.id_comuna = Comunas.id AND Comunas.comuna LIKE '%$comuna%';";

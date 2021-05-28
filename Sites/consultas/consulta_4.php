@@ -5,6 +5,7 @@
     require("../config/conexion.php");
 
     $tipo = $_POST["tipo_vehiculo"];
+    $tipo = strtolower("$tipo");
     $edad1 = $_POST["edad1"];
     $edad2 = $_POST["edad2"];
 

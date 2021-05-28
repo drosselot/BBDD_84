@@ -5,7 +5,9 @@
     require("../config/conexion.php");
 
     $comuna1 = $_POST["comuna1"];
+    $comuna1 = strtolower("$comuna1");
     $comuna2 = $_POST["comuna2"];
+    $comuna2 = strtolower("$comuna2");
 
     $query = "SELECT Unidades.id, Personal.id, Personal.nombre, Personal.rut, Personal.sexo, Personal.edad FROM Personal, Unidades, Cobertura, Comunas WHERE Cobertura.id_comuna = Comunas.id AND Personal.id = Unidades.id_jefe AND Unidades.id = Cobertura.id_unidad AND Comunas.comuna LIKE '%$comuna2%' AND Unidades.id IN (SELECT Unidades.id FROM Unidades, Cobertura, Comunas WHERE Unidades.id = Cobertura.id_unidad AND Comunas.id = Cobertura.id_comuna AND Comunas.comuna LIKE '%$comuna1%' GROUP BY Unidades.id) GROUP BY (Unidades.id, Personal.id, Personal.nombre, Personal.rut, Personal.sexo, Personal.edad);";
 
