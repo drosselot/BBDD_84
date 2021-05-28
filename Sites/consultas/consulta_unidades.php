@@ -11,7 +11,7 @@
     $unidades = $resultado -> fetchAll();
 ?>
 
-<table>
+<table align="center" cellspacing="2" cellpadding="2" border="1">
     <tr>
         <th>id</th>
         <th>direccion</th>

@@ -16,7 +16,7 @@
     $consulta = $resultado -> fetchAll();
 ?>
 
-<table>
+<table align="center" cellspacing="2" cellpadding="2" border="1">
     <tr>
         <th>ID Despacho</th>
         <th>Fecha Despacho</th>
